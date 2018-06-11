@@ -1,0 +1,90 @@
+body{
+	background: #f2f2f2;
+}
+#jumbo{
+	background: url("https://cdn-images-1.medium.com/max/2000/1*fWJwhmCFl5vrTqboSW5p3w.jpeg");
+    background-size: 100% 100%;
+    height:500px;
+}
+
+p{
+	font-size: 12px;
+	color:gray;
+}
+.header{
+	display: flex;
+	align-items: center; 
+	justify-content: center;
+	padding-top:50px;
+}
+.container .image img{
+	height:450px;
+	width:200px;
+	margin-bottom: 20px;
+}
+.container{
+	margin-bottom:50px;
+}
+h3{
+	font-size: 20px;
+}
+video{
+		width:40%;
+		height:auto;
+}
+.app img{
+	padding:5px;
+}
+.connect{
+	padding-top:20px;
+	padding-bottom: 50px;
+}
+.connect img{
+	border-radius:50%;
+    background-color:#cccccc;
+    margin:4px;
+}
+a{
+	color:gray;
+	font-size:12px;
+	padding:10px;
+}
+.connect a{
+	padding:0!important;
+}
+@media all and (min-width:1000px){
+	.container .image img{
+		height: 500px;
+		width: 250px;
+	}
+	video{
+		width:380px;
+		height:auto;
+	}
+	
+}
+@media screen and (min-width:768px){
+	.content{
+		position: relative;
+	}
+	.container .image img{
+		position: absolute;
+		left: 50%;
+		transform: translate(-50%,-50%);	
+	}	
+}
+@media all and (max-width: 767px){
+	#jumbo{
+		height:350px;
+	}
+	.content{
+		text-align: center;
+    }
+    .app{
+    	text-align: center;
+    }
+    video{
+    	width:250px;
+    	height: auto;
+    }
+}
